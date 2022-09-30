@@ -5,11 +5,11 @@ summarize about shell command 2
 ## Shell commands
 ### languages  
 #### I/O redirection
-* **>**: using after a command to create and save the ouput in a file.
+* **\>**: using after a command to create and save the ouput in a file.
 * **cat**: displays the content of a text file. 
-* **>>**: If file exitsts, appending output to an extising file
+* **\>\>**: If file exitsts, appending output to an extising file
           : If file doesn't exist, creating and writing to a new file.
-* **<**: redirect input from a file. (can mix with ">".)
+* **\<**: redirect input from a file. (can mix with ">".)
 
 #### Pipelines "|"
  - It feeds output of previous command to input of next command.
@@ -17,7 +17,7 @@ summarize about shell command 2
  - If you want to exit the screen, press "q" key.
 
 #### Expansion
-**using**: special characters expand its meaning when give to shell commands.
+**using**: special characters expand its meaning when give to shell commands.  
 **example**
 1. echo (text): print out the (text)
 2. echo *: expanded to contain information about files in the current directory
