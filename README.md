@@ -2,33 +2,33 @@
 summarize about shell command 2
 
 
-##Shell commands
-###languages
-####I/O redirection
+## Shell commands
+### languages  
+#### I/O redirection
 * **">"**: using after a command to create and save the ouput in a file.
 * **cat**: displays the content of a text file. 
 * **">>"**: If file exitsts, appending output to an extising file
           : If file doesn't exist, creating and writing to a new file.
 * **"<"**: redirect input from a file. (can mix with ">".)
 
-####Pipelines "|"
+#### Pipelines "|"
  - It feeds output of previous command to input of next command.
  - It shows in another screen.
  - If you want to exit the screen, press "q" key.
 
-####Expansion
+#### Expansion
 **using**: special characters expand its meaning when give to shell commands.
 **example**
 1. echo (text): print out the (text)
 2. echo *: expanded to contain information about files in the current directory
 3. echo ~: expanded current user's home directory
 
-####Backslash \
+#### Backslash '\'  
 : Ignoring line change in command, to enter a long command in multiple lines.
 
-####Permissions
+#### Permissions
 : Files and directories have a permission assigned differently to owner/group/others.
-*necessity: Because Linux is a multi-user system (to protect directory)
+* **necessity**: Because Linux is a multi-user system (to protect directory)
 * **rwx**
   : read, write, execute (print 'rwx rwx rwx')
   : "chmod" changes permissions
@@ -41,13 +41,13 @@ summarize about shell command 2
       - 644 (=110 100 100)(rw-r--r--): the owner may read and write a file, while all others may only read the file.
       - 600 (=110 000 000)(rw-------): the owner may read and write a file. All others have no rights.
 
-####Superuser
+#### Superuser
  - A superuser has all system administation authority.
  - Some commands need superuser's privilleges.
  - Put "sudo" before the command if you are a superuser. (but not recommending)
  - If you get out of a superuser sessions, type "exit"
 
-####Text Editors
+#### Text Editors
 : in Linus, you can choose CLI-based or GUI-based text editors.
  1. CLI-based
   - vi, vim
@@ -66,7 +66,7 @@ summarize about shell command 2
     : It is the "advanced editor" supplied with KDE.
     : It has syntax highlighting, a helpful feature for programmers and script wrtiers.
   
-  ####Shell script
+  #### Shell script
   **script**: It automatically executes the pre-written ones sequentially.
   **way** 
    1. Open the text editor of the GUI you are using and write the script.
@@ -75,6 +75,6 @@ summarize about shell command 2
       - If file name exists, you can revise the contents of the file.
       - If file name doesn't exist, you can enter the contents of the file.
                             
- ####History
+ #### History
  - Type "history" to see previous command history or command history that save it to a text file.
  
