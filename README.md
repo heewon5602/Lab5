@@ -5,11 +5,11 @@ summarize about shell command 2
 ## Shell commands
 ### languages  
 #### I/O redirection
-* **\>**: using after a command to create and save the ouput in a file.
+* **>**: using after a command to create and save the ouput in a file.
 * **cat**: displays the content of a text file. 
-* **\>\>**: If file exitsts, appending output to an extising file
+* **>>**: If file exitsts, appending output to an extising file
           : If file doesn't exist, creating and writing to a new file.
-* **\<**: redirect input from a file. (can mix with ">".)
+* **<**: redirect input from a file. (can mix with ">".)
 
 #### Pipelines "|"
  - It feeds output of previous command to input of next command.
@@ -31,8 +31,8 @@ summarize about shell command 2
 * **necessity**: Because Linux is a multi-user system (to protect directory)
 * **rwx**
   : read, write, execute (print 'rwx rwx rwx')
-  : "chmod" changes permissions
-  : formation example) chmod 600 flename (6: rw- for owner, 0: --- for group, 0: --- for others)
+  : "chmod" changes permissions  
+  : formation example) chmod 600 flename (6: rw- for owner, 0: --- for group, 0: --- for others)  
       - 777 (=111 111 111)(rwxrwxrwx): no restrictions on permissions.  
       - 755 (=111 101 101)(rwxr-xr-x): the file's owner may read, write, and execute the file. All others may read and execute the file(no write).  
       - 700 (=111 000 000)(rwx------): the file's owner may read, write, and execute the file. Nobody else has any rights.  
