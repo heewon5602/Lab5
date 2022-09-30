@@ -5,11 +5,11 @@ summarize about shell command 2
 ## Shell commands
 ### languages  
 #### I/O redirection
-* **">"**: using after a command to create and save the ouput in a file.
+* **>**: using after a command to create and save the ouput in a file.
 * **cat**: displays the content of a text file. 
-* **">>"**: If file exitsts, appending output to an extising file
+* **>>**: If file exitsts, appending output to an extising file
           : If file doesn't exist, creating and writing to a new file.
-* **"<"**: redirect input from a file. (can mix with ">".)
+* **<**: redirect input from a file. (can mix with ">".)
 
 #### Pipelines "|"
  - It feeds output of previous command to input of next command.
@@ -23,7 +23,7 @@ summarize about shell command 2
 2. echo *: expanded to contain information about files in the current directory
 3. echo ~: expanded current user's home directory
 
-#### Backslash '\'  
+#### Backslash '\\'  
 : Ignoring line change in command, to enter a long command in multiple lines.
 
 #### Permissions
@@ -33,13 +33,13 @@ summarize about shell command 2
   : read, write, execute (print 'rwx rwx rwx')
   : "chmod" changes permissions
   : formation example) chmod 600 flename (6: rw- for owner, 0: --- for group, 0: --- for others)
-      - 777 (=111 111 111)(rwxrwxrwx): no restrictions on permissions.
-      - 755 (=111 101 101)(rwxr-xr-x): the file's owner may read, write, and execute the file. All others may read and execute the file(no write).
-      - 700 (=111 000 000)(rwx------): the file's owner may read, write, and execute the file. Nobody else has any rights.
-                                     : this setting is useful for programs that only the owner may use and must be kept private from others.
-      - 666 (=110 110 110)(rw-rw-rw-): all users may read and write the file. (no execute)
-      - 644 (=110 100 100)(rw-r--r--): the owner may read and write a file, while all others may only read the file.
-      - 600 (=110 000 000)(rw-------): the owner may read and write a file. All others have no rights.
+      - 777 (=111 111 111)(rwxrwxrwx): no restrictions on permissions.  
+      - 755 (=111 101 101)(rwxr-xr-x): the file's owner may read, write, and execute the file. All others may read and execute the file(no write).  
+      - 700 (=111 000 000)(rwx------): the file's owner may read, write, and execute the file. Nobody else has any rights.  
+                                     : this setting is useful for programs that only the owner may use and must be kept private from others.  
+      - 666 (=110 110 110)(rw-rw-rw-): all users may read and write the file. (no execute)  
+      - 644 (=110 100 100)(rw-r--r--): the owner may read and write a file, while all others may only read the file.  
+      - 600 (=110 000 000)(rw-------): the owner may read and write a file. All others have no rights.  
 
 #### Superuser
  - A superuser has all system administation authority.
